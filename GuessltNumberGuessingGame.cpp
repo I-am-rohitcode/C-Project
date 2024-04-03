@@ -6,7 +6,7 @@
 using namespace std;
 void easy()
 {
-    int secretNumver = 1+(rand() % 20);
+    int secretNumver = 1+(rand() % 19);
     int playerChoice;
     int ChoiceLeft = 10;
     cout << "\n You have 10 choices for finding the secret number between 1 to 20.";
@@ -44,7 +44,7 @@ void easy()
 }
 void medium()
 {
-    int secretNumver = 1+(rand() % 20);
+    int secretNumver = 1+(rand() % 19);
     int playerChoice;
     int ChoiceLeft = 7;
     cout << "\n You have 7 choices for finding the secret number between 1 to 20";
@@ -82,7 +82,7 @@ void medium()
 }
 void difficult()
 {
-    int secretNumver = 1+(rand() % 20);
+    int secretNumver = 1+(rand() % 19);
     int playerChoice;
     int ChoiceLeft = 5;
     cout << "\n You have 5 choices for finding the secret number between 1 to 20";
