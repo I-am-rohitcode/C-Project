@@ -1,153 +1,137 @@
-#include <cstdlib>
 #include <iostream>
-#include <time.h>
-#include <conio.h>
-#include <windows.h>
+#include <cstdlib>
+#include <ctime>
+
 using namespace std;
+
 void easy()
 {
-    int secretNumver = 1 + (rand() % 19);
+    int secretNumber = 1 + (rand() % 20);
     int playerChoice;
     int ChoiceLeft = 10;
-    cout << "\n You have 10 choices for finding the secret number between 1 to 20.";
-    for (int i = 1; i <= 10; i++)
+    cout << "\nYou have 10 choices to find the secret number between 1 to 20." << endl;
+    while (ChoiceLeft > 0)
     {
-    back:
-        cout << "\n\nEnetr the number: ";
+        cout << "\nEnter your choice: ";
         cin >> playerChoice;
-        if (playerChoice < 21 && playerChoice > 0)
+        if (playerChoice >= 1 && playerChoice <= 20)
         {
-            if (playerChoice == secretNumver)
+            if (playerChoice == secretNumber)
             {
-                system("CLS");
-                cout << "well played! You won, " << playerChoice << " is the secret number" << endl;
-                cout << "\t\t\t Thanks for playing..." << endl;
+                cout << "Congratulations! You won. " << playerChoice << " is the secret number." << endl;
                 break;
             }
             else
             {
-                cout << "Nope, " << playerChoice << " is not the right number\n";
-                if (playerChoice > secretNumver)
+                cout << "Nope, " << playerChoice << " is not the right number." << endl;
+                if (playerChoice > secretNumber)
                 {
-                    cout << "The secret number is smaller than the number your have chosen" << endl;
+                    cout << "The secret number is smaller than the number you have chosen." << endl;
                 }
                 else
                 {
-                    cout << "The secret number is greater than the number your have chosen" << endl;
+                    cout << "The secret number is greater than the number you have chosen." << endl;
                 }
                 ChoiceLeft--;
-                cout << ChoiceLeft << " choies left." << endl;
+                cout << ChoiceLeft << " choices left." << endl;
                 if (ChoiceLeft == 0)
                 {
-                    cout << "\nYout Couldn't find the secret number,it was " << secretNumver << endl;
-                    cout << " Play the game again to win!!\n\n";
-                    break;
+                    cout << "\nYou couldn't find the secret number. It was " << secretNumber << "." << endl;
+                    cout << "Play the game again to win!" << endl;
                 }
             }
         }
         else
         {
-            cout << "Enter a number between 1 to 20" << endl;
-            getch();
-            goto back;
+            cout << "Please enter a number between 1 and 20." << endl;
         }
     }
 }
+
 void medium()
 {
-    int secretNumver = 1 + (rand() % 19);
+    int secretNumber = 1 + (rand() % 20);
     int playerChoice;
     int ChoiceLeft = 7;
-    cout << "\n You have 7 choices for finding the secret number between 1 to 20.";
-    for (int i = 1; i <= 10; i++)
+    cout << "\nYou have 7 choices to find the secret number between 1 to 20." << endl;
+    while (ChoiceLeft > 0)
     {
-    back:
-        cout << "\n\nEnetr the number: ";
+        cout << "\nEnter your choice: ";
         cin >> playerChoice;
-        if (playerChoice < 21 && playerChoice > 0)
+        if (playerChoice >= 1 && playerChoice <= 20)
         {
-            if (playerChoice == secretNumver)
+            if (playerChoice == secretNumber)
             {
-                system("CLS");
-                cout << "well played! You won, " << playerChoice << " is the secret number" << endl;
-                cout << "\t\t\t Thanks for playing..." << endl;
+                cout << "Congratulations! You won. " << playerChoice << " is the secret number." << endl;
                 break;
             }
             else
             {
-                cout << "Nope, " << playerChoice << " is not the right number\n";
-                if (playerChoice > secretNumver)
+                cout << "Nope, " << playerChoice << " is not the right number." << endl;
+                if (playerChoice > secretNumber)
                 {
-                    cout << "The secret number is smaller than the number your have chosen" << endl;
+                    cout << "The secret number is smaller than the number you have chosen." << endl;
                 }
                 else
                 {
-                    cout << "The secret number is greater than the number your have chosen" << endl;
+                    cout << "The secret number is greater than the number you have chosen." << endl;
                 }
                 ChoiceLeft--;
-                cout << ChoiceLeft << " choies left." << endl;
+                cout << ChoiceLeft << " choices left." << endl;
                 if (ChoiceLeft == 0)
                 {
-                    cout << "\nYout Couldn't find the secret number,it was " << secretNumver << endl;
-                    cout << " Play the game again to win!!\n\n";
-                    break;
+                    cout << "\nYou couldn't find the secret number. It was " << secretNumber << "." << endl;
+                    cout << "Play the game again to win!" << endl;
                 }
             }
         }
         else
         {
-            cout << "Enter a number between 1 to 20" << endl;
-            getch();
-            goto back;
+            cout << "Please enter a number between 1 and 20." << endl;
         }
     }
 }
+
 void difficult()
 {
-    int secretNumver = 1 + (rand() % 19);
+    int secretNumber = 1 + (rand() % 20);
     int playerChoice;
     int ChoiceLeft = 5;
-    cout << "\n You have 5 choices for finding the secret number between 1 to 20.";
-    for (int i = 1; i <= 10; i++)
+    cout << "\nYou have 5 choices to find the secret number between 1 to 20." << endl;
+    while (ChoiceLeft > 0)
     {
-    back:
-        cout << "\n\nEnetr the number: ";
+        cout << "\nEnter your choice: ";
         cin >> playerChoice;
-        if (playerChoice < 21 && playerChoice > 0)
+        if (playerChoice >= 1 && playerChoice <= 20)
         {
-            if (playerChoice == secretNumver)
+            if (playerChoice == secretNumber)
             {
-                system("CLS");
-                cout << "well played! You won, " << playerChoice << " is the secret number" << endl;
-                cout << "\t\t\t Thanks for playing..." << endl;
+                cout << "Congratulations! You won. " << playerChoice << " is the secret number." << endl;
                 break;
             }
             else
             {
-                cout << "Nope, " << playerChoice << " is not the right number\n";
-                if (playerChoice > secretNumver)
+                cout << "Nope, " << playerChoice << " is not the right number." << endl;
+                if (playerChoice > secretNumber)
                 {
-                    cout << "The secret number is smaller than the number your have chosen" << endl;
+                    cout << "The secret number is smaller than the number you have chosen." << endl;
                 }
                 else
                 {
-                    cout << "The secret number is greater than the number your have chosen" << endl;
+                    cout << "The secret number is greater than the number you have chosen." << endl;
                 }
                 ChoiceLeft--;
-                cout << ChoiceLeft << " choies left." << endl;
+                cout << ChoiceLeft << " choices left." << endl;
                 if (ChoiceLeft == 0)
                 {
-                    cout << "\nYout Couldn't find the secret number,it was " << secretNumver << endl;
-                    cout << " Play the game again to win!!\n\n";
-                    break;
+                    cout << "\nYou couldn't find the secret number. It was " << secretNumber << "." << endl;
+                    cout << "Play the game again to win!" << endl;
                 }
             }
         }
         else
         {
-            cout << "Enter a number between 1 to 20" << endl;
-            getch();
-            goto back;
+            cout << "Please enter a number between 1 and 20." << endl;
         }
     }
 }
@@ -155,37 +139,37 @@ void difficult()
 int main()
 {
     srand(time(0));
-    cout << "\n\t\t\tWelcome to guessThe Number game!" << endl;
-    cout << "You have to guess a number between 1 to 20." << endl
-         << "You'll have limited choices based on the "
-         << "level you choose.Good Luck!"
+    cout << "\t\t\tWelcome to Guess The Number Game!" << endl;
+    cout << "You have to guess a number between 1 to 20." << endl;
+    cout << "You'll have limited choices based on the level you choose. Good Luck!" << endl;
+    cout << "\nChoose the difficulty level:\n";
+    cout << "1 for Easy\t\t";
+    cout << "2 for Medium\t\t";
+    cout << "3 for Difficult\t\t";
+    cout << "0 to Quit\n"
          << endl;
-    cout << "\n Enter ther different level:\n";
-    cout << "1 for easy!\t";
-    cout << "2 for medium!\t";
-    cout << "3 for difficult!\t";
-    cout << "0 for ending the game!\n"
-         << endl;
-    int difficultyChoice;
 
-    difficultyChoice = getch();
+    int difficultyChoice;
+    cin >> difficultyChoice;
+
     switch (difficultyChoice)
     {
-    case '1':
+    case 1:
         easy();
         break;
-    case '2':
+    case 2:
         medium();
         break;
-    case '3':
+    case 3:
         difficult();
         break;
-    case '0':
-        exit(0);
+    case 0:
+        cout << "Exiting the game. Goodbye!" << endl;
         break;
     default:
-        cout << "Wrong choice,enter valid choice to play the game!(0,1,2,3)" << endl;
+        cout << "Wrong choice. Enter a valid choice to play the game! (0, 1, 2, 3)" << endl;
         break;
     }
+
     return 0;
 }
