@@ -15,7 +15,7 @@ void easy()
     back:
         cout << "\n\nEnetr the number: ";
         cin >> playerChoice;
-        if (playerChoice < 21)
+        if (playerChoice < 21 && playerChoice > 0)
         {
             if (playerChoice == secretNumver)
             {
@@ -47,7 +47,7 @@ void easy()
         }
         else
         {
-            cout << "Enter a number between 1 to 20";
+            cout << "Enter a number between 1 to 20" << endl;
             getch();
             goto back;
         }
@@ -64,7 +64,7 @@ void medium()
     back:
         cout << "\n\nEnetr the number: ";
         cin >> playerChoice;
-        if (playerChoice < 21)
+        if (playerChoice < 21 && playerChoice > 0)
         {
             if (playerChoice == secretNumver)
             {
@@ -113,7 +113,7 @@ void difficult()
     back:
         cout << "\n\nEnetr the number: ";
         cin >> playerChoice;
-        if (playerChoice < 21)
+        if (playerChoice < 21 && playerChoice > 0)
         {
             if (playerChoice == secretNumver)
             {
@@ -145,7 +145,7 @@ void difficult()
         }
         else
         {
-            cout << "Enter a number between 1 to 20";
+            cout << "Enter a number between 1 to 20" << endl;
             getch();
             goto back;
         }
